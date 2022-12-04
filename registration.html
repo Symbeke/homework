@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration page</h1>
+
+    <span>Email: </span><input type="text" id="email_input"> <br>
+    <span>Password: </span><input type="text" id="password_input"> <br>
+    <input type="checkbox" onclick="myFunction()">Show Password<br>
+
+    <span>Verification code: </span><input type="text" id="code_input"> <br>
+    <button id="btn_code">Send code</button>
+
+    <button id="btn_registration">registration</button>
+    
+    <script type="text/javascript"
+             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function(){
+                        emailjs.init("vBD_jJrt-DjpBKgtd");
+    })();
+    </script>
+    <script src="registration.js"></script>
+</body>
+</html>
